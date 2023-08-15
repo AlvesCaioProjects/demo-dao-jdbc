@@ -164,6 +164,7 @@ public class SellerDaoJDBC implements SellerDao {
 			
 			while (rs.next()) {
 				
+				// Map para verificar se já existe um department com esse ID.
 				Department dep = map.get(rs.getInt("DepartmentId"));
 				
 				if (dep == null) {
